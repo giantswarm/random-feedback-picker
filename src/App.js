@@ -80,7 +80,13 @@ class App extends Component {
             </p>
 
             <p>
-              Press the big green button to make a possible solution. Might take a little while.
+
+              {
+                typeof this.state.seed !== "undefined" ?
+                "The people you should give feedback on are the small profiles under your name."
+                :
+                "Press the big green button to make a possible solution. Might take a little while."
+              }
             </p>
           </div>
 
@@ -89,10 +95,10 @@ class App extends Component {
               this.state.working ?
               <img src="img/loader.svg" className="loader" height="50px" width="88px" style={{display: "block"}}/>
               :
-              <button onClick={this.generateValidSeed.bind(this)}>
+              <button onClick={this.generateValidSeed.bind(this)} className={typeof this.state.seed !== "undefined" ? "deactivate" : ""}>
               {
                 typeof this.state.seed !== "undefined" ?
-                "GO AGAIN"
+                "Anna's Button"
                 :
                 "GO"
               }

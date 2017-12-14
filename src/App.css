@@ -114,3 +114,7 @@ button {
 .loader {
   animation: App-logo-spin infinite 1s linear;
 }
+
+.deactivate {
+  background-color:  #888;
+}
