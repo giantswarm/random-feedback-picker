@@ -8,6 +8,6 @@ To develop:
 
 To publish:
 
-    npm deploy
+    npm run deploy
 
 It'll be available at https://giantswarm.github.io/random-feedback-picker/
