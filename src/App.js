@@ -94,7 +94,6 @@ class App extends Component {
 
             <div className="seed-explanation">
               Seed: {this.state.seed}<br/>
-              Valid: {this.state.valid ? "Yes" : "No"}<br/>
             </div>
           </div>
         </header>
