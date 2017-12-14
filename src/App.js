@@ -80,16 +80,23 @@ class App extends Component {
             </p>
 
             <p>
-              Press the big green button to find out which colleagues you'll be giving feedback to.
+              Press the big green button to make a possible solution. Might take a little while.
             </p>
           </div>
 
           <div>
             {
               this.state.working ?
-              <img src="img/loader.svg" height="50px" width="88px" style={{display: "block"}}/>
+              <img src="img/loader.svg" className="loader" height="50px" width="88px" style={{display: "block"}}/>
               :
-              <button onClick={this.generateValidSeed.bind(this)}>GO</button>
+              <button onClick={this.generateValidSeed.bind(this)}>
+              {
+                typeof this.state.seed !== "undefined" ?
+                "GO AGAIN"
+                :
+                "GO"
+              }
+              </button>
             }
 
             <div className="seed-explanation">
@@ -109,8 +116,15 @@ class App extends Component {
                     <h3>{member.name}</h3>
 
                     <div className="feedback-assignments">
-                      <img src={"img/team/" + member.firstAssignment.name +".jpg"} alt="o" />
-                      <img src={"img/team/" + member.secondAssignment.name + ".jpg"} alt="o" />
+                      {
+                        typeof this.state.seed === "undefined" ?
+                        ""
+                        :
+                        <div>
+                          <img src={"img/team/" + member.firstAssignment.name +".jpg"} alt="o" />
+                          <img src={"img/team/" + member.secondAssignment.name + ".jpg"} alt="o" />
+                        </div>
+                      }
                     </div>
                   </div>
                 })}
