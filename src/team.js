@@ -21,7 +21,6 @@ var teamMembers = [
   {"name": "Henning Lange",           "team": "rainmakers"},
   {"name": "Oliver Thylmann",         "team": "rainmakers"},
   {"name": "Thea Hüttenberger",       "team": "rainmakers"},
-  {"name": "Thea Hüttenberger",       "team": "rainmakers"},
   {"name": "Tommy Hobin",             "team": "rainmakers"},
 
   // Spirit
