@@ -1,11 +1,11 @@
 var teamMembers = [
   // Batman
-  {"name": "Federico Gimenez",        "team": "batman"},
   {"name": "Fernando Ripoll",         "team": "batman"},
   {"name": "Oliver Ponder",           "team": "batman"},
   {"name": "Puja Abbassi",            "team": "batman"},
   {"name": "Ross Fairbanks",          "team": "batman"},
   {"name": "Volodymyr Stoiko",        "team": "batman"},
+  {"name": "Théo Brigitte",           "team": "batman"},
   {"name": "Tobias Richter",          "team": "batman"},
 
   // Magic
@@ -14,7 +14,7 @@ var teamMembers = [
   {"name": "Marian Steinbach",        "team": "magic"},
   {"name": "Paweł Kopiczko",          "team": "magic"},
   {"name": "Roman Sokolkov",          "team": "magic"},
-  {"name": "Théo Brigitte",           "team": "magic"},
+
 
   // Rainmakers
   {"name": "Anna Loew",               "team": "rainmakers"},
